@@ -4,18 +4,10 @@ This is a simple RESTful API built with **Flask** that manages a basic to-do lis
 
 ---
 
-## Curl Commands to Test 
-**To add new Task**
+## 🧪 Curl Commands to Test 
+
+### ➕ To Add a New Task
+```bash
 curl -X POST http://localhost:5000/add_todo \
      -H "Content-Type: application/json" \
      -d "{\"task\":\"Complete Your Homework\"}"
-**To Get all todos**
-curl hGttp://localhost:5000/get_todos
-**To Get todo by ID**
-curl http://localhost:5000/get_todo/1
-**To Update todo by ID**
-curl -X PUT http://localhost:5000/update_todo/1 \
-     -H "Content-Type: application/json" \
-     -d "{\"task\":\"Updated Task Name\"}"
-**To Delete todo by ID**
-curl -X DELETE http://localhost:5000/delete_todo/1
